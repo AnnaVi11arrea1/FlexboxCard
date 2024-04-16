@@ -1,0 +1,108 @@
+body {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: #302d26;
+    color: #fff;
+}
+
+.image {
+    object-fit: cover;
+    flex-basis: 400px;
+    min-width: 0;
+    min-height: 0;
+}
+
+.main {
+    padding: 1em;
+}
+
+.card-title {
+    color: #dbcbab;
+    font-size:1.75rem;
+    margin: 0;
+}
+
+.card-body {
+    font-size: 1rem;
+    font-family: 'Source Ans Pro', sans-serif;
+    line-height:1.6;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 3em;
+}
+
+.minutes {
+    margin: 0;
+    opacity: .6;
+    line-height: 1;
+}
+
+.card-btn {
+    font-size: 1.25rem;
+    background: #dbcbab;
+    color: #302d26;
+    text-decoration: none;
+    font-weight: 700;
+    padding: .35em 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px 3px black;
+}
+
+.card-btn:hover,
+.card-btn:focus,
+.card-btn:active {
+    box-shadow: 0 0 10px 3px white;
+}
+
+.card-btn,
+.minutes,
+.card-title {
+    font-family: 'Blinker', sans-serif;
+}
+.card-btn {
+    font-size:1.25rem;
+    padding: .35em 1em;
+    letter-spacing: 1px;
+}
+
+.minutes span {
+    font weight: 700;
+    display: block;
+    font-size: 1.25em;
+}
+
+@media (min-width: 600px){
+    .card {
+        flex-direction: row;
+    }
+    .image {
+        height: 300px; 
+    }
+    .main {
+        display:flex;
+        flex-direction: column;
+    }
+    .footer {
+        margin-top: auto;
+    }
+    .card-title {
+        font-size: 2.25rem;
+    }
+    .card-body {
+        font-size: 1.125rem;
+        max-width:500px;
+    }
+}
